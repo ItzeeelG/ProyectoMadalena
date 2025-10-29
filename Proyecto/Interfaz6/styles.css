@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body{
+    font-family: "Open Sans";
+}
+/* Barra de navegación */
+.menu {
+  display: flex;
+  align-items: center;
+  background-color: #d5ebd6;  
+  padding: 10px 20px;
+  top: 0;
+  width: 100%;
+  opacity: 0.95;
+  font-family: "Open Sans";
+}
+
+/* Icono del menú */
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  display: block;
+  margin-right: 10px; 
+}
+
+/* Menú desplegable oculto */
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;         
+  flex-direction: column;
+  background-color: #5b6c63;
+  position: absolute;
+  top: 60px;      
+  left: 10px;     
+  width: 150px;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+/* Opciones del menú */
+.menu-items li a {
+  display: block;
+  padding: 8px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px; 
+}
+
+.menu-items li a:hover {
+  background-color: #26774d; 
+}
+
+/* Logo */
+.menu .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.menu .logo img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.form-fila{
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*Boton iniciar sesion*/
+.botoniniciarsesion{
+     background-color: #2298e6;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  margin-left: 850px;
+}
+
+
+/* --- Sección principal --- */
+.hero {
+  margin-top: 120px; /* separa del menú */
+  padding: 60px 10%;
+}
+
+.hero-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-texto h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.hero-texto p {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.btn-reserva {
+  background-color: #2298e6;
+  color: white;
+  padding: 15px 40px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-reserva:hover {
+  background-color: #007bce;
+  transform: scale(1.05);
+}
+
+.hero-imagen {
+  flex: 1;
+  min-width: 300px;
+  text-align: right;
+}
+
+.hero-imagen img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* --- Pie de página --- */
+.pie {
+  margin-top: 10px;
+  background-color: #d5ebd6;
+  padding: 10px ;
+  font-family: "Open Sans";
+}
+
+.form-fila {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* --- Responsivo --- */
+@media (max-width: 900px) {
+  .hero-contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-imagen {
+    text-align: center;
+  }
+
+  .hero-texto h1 {
+    font-size: 50px;
+  }
+
+  .btn-reserva {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+
+  .form-fila {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

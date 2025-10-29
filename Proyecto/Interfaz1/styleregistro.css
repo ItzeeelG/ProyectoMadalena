@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* Barra de navegación */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #d5ebd6;  
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.95;
+  font-family: "Open Sans";
+  z-index: 1000;
+}
+
+/* Icono del menú (3 rayas) */
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  display: block;
+  margin-right: 10px; 
+}
+
+/* Menú desplegable oculto */
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;         
+  flex-direction: column;
+  background-color: #5b6c63;
+  position: absolute;
+  top: 60px;      
+  left: 10px;     
+  width: 150px;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+/* Opciones del menú */
+.menu-items li a {
+  display: block;
+  padding: 8px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px; 
+}
+
+.menu-items li a:hover {
+  background-color: #26774d; 
+}
+
+/* Logo */
+.menu .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.menu .logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; 
+  object-fit: contain;
+}
+
+.modal {
+  display: none; /* oculto por defecto */
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); /* fondo semi-transparente */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* centrado vertical y horizontal */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#close:hover {
+  color: black;
+}
+
+input, textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px; 
+  display: block;
+  margin: 0 auto;      /* centra horizontalmente */
+}
+
+h1{
+    font-family: "Open Sans";
+    color: black;
+    margin-top: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h5{
+    font-family: "Open Sans";
+    color: black;
+    text-align: center;
+}
+
+h6{
+    font-family: "Open Sans";
+    color: black;
+    letter-spacing: 3px;
+    margin-left: 618px;
+    margin-top: 35px;
+    font-size: 80%;
+}
+
+button{
+    background-color: #2289e6;
+    border: #2289e6;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    height: 50px;
+    width: 170px;
+    display: block;
+    margin: 0 auto;      /* centra horizontalmente */
+    margin-top: 30px;
+}
